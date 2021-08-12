@@ -1,0 +1,97 @@
+﻿body
+{
+    background-color: white;
+    font-family: 'Ainslie Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+}
+
+header {
+    background-color: #070600;
+    text-align: center;
+    padding-bottom: 3px;
+    color: #F7F7F2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+nav li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 2px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+
+.slides {
+    transition:ease 1s;
+}
+
+.slides:hover {
+
+    opacity: 0.75;
+}
+.slides img {
+    width: 100%;
+}
+
+.slides {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.captions {
+    font-size: 18px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    padding: 8px 12px;
+    background-color: rgba(59, 67, 67, 0.75);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
